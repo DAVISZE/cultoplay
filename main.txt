@@ -1,27 +1,42 @@
-version: 5.0
+version: 10.0
 
-Arquivo de teste do sistema de atualização.
-Se o programa detectar versão 5.0, significa que a verificação funcionou.
+Arquivo de teste do sistema de atualização
+Se o updater detectar essa versão significa que tudo funcionou.
 
-(Ferramenta.java =
-public class Ferramenta {
+(Teste1.java =
+public class Teste1 {
 
-    public static void msg() {
-        System.out.println("Ferramenta carregada com sucesso!");
+    public static void mensagem() {
+
+        System.out.println("Arquivo Teste1 baixado!");
+        System.out.println("Sistema de update funcionando.");
+
     }
 
 }
 )
 
-(Teste.java =
-public class Teste {
+(Teste2.java =
+public class Teste2 {
 
     public static void main(String[] args) {
 
-        System.out.println("Arquivo Teste baixado com sucesso!");
-        System.out.println("Versao atual: 5.0");
+        System.out.println("Arquivo Teste2 baixado!");
+        System.out.println("Versao atual: 10.0");
 
-        Ferramenta.msg();
+        Teste1.mensagem();
+
+    }
+
+}
+)
+
+(Utilidade.java =
+public class Utilidade {
+
+    public static void info() {
+
+        System.out.println("Updater funcionando com GitHub RAW.");
 
     }
 
