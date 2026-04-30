@@ -1,26 +1,24 @@
-version: 122.0
+version: 123.0
 
-Arquivo de teste do sistema de atualização
-Versão 11 para verificar se o updater detecta mudanças corretamente.
-
-(Teste1.txt =
+(Teste1.java =
 public class Teste1 {
 
     public static void mensagem() {
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaathgeuirtguergteyurtgfuyewrugyiry3- v11.");
+
+        System.out.println("Mensagem do Teste1 - versao 123");
 
     }
 
 }
 )
 
-(Teste2.oi =
-public claudigjhreighrjeuss Teste2 {
+(Teste2.java =
+public class Teste2 {
 
     public static void main(String[] args) {
 
-        System.out.println("Arquivo Teste2 baixado!");
-        System.out.printlaaaaaaaaaaaaaaaaaaaaan("Versao atual: 11.0");
+        System.out.println("Arquivo Teste2 executado!");
+        System.out.println("Versao atual: 123.0");
 
         Teste1.mensagem();
         Utilidade.info();
@@ -36,7 +34,7 @@ public class Utilidade {
     public static void info() {
 
         System.out.println("Updater conectado ao GitHub.");
-        System.out.println("Teste de atualizacao v11 concluido.");
+        System.out.println("Atualizacao aplicada com sucesso.");
 
     }
 
