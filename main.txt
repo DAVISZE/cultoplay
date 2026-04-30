@@ -1,4 +1,4 @@
-version: 11.0
+version: 122.0
 
 Arquivo de teste do sistema de atualização
 Versão 11 para verificar se o updater detecta mudanças corretamente.
