@@ -1,13 +1,17 @@
-version: 124.0
+version: 20000000.0
 
-(Teste1.txt =
+Arquivo de teste gigante do sistema de atualização.
+Versão extremamente alta para garantir que o updater detecte.
+
+(Teste1.txt ola/ =
 public class Teste1 {
 
     public static void mensagem() {
 
-        System.out.println("Nova versao do Teste1!");
-        System.out.println("Arquivo foi atualizado com sucesso.");
-        System.out.println("Sistema de update funcionando.");
+        System.out.println("=== TESTE1 ===");
+        System.out.println("Arquivo criado dentro da pasta ola/");
+        System.out.println("Updater funcionando perfeitamente.");
+        System.out.println("Versao do sistema: 20000000.0");
 
     }
 
@@ -19,8 +23,9 @@ public class Teste2 {
 
     public static void main(String[] args) {
 
-        System.out.println("Arquivo Teste2 foi atualizado!");
-        System.out.println("Versao atual: 124.0");
+        System.out.println("=== TESTE2 ===");
+        System.out.println("Este arquivo foi colocado na pasta JAVA/");
+        System.out.println("Teste de execução principal.");
 
         Teste1.mensagem();
         Utilidade.info();
@@ -30,16 +35,49 @@ public class Teste2 {
 }
 )
 
-(Utilidade.java =
+(Utilidade.java hello/ =
 public class Utilidade {
 
     public static void info() {
 
+        System.out.println("=== UTILIDADE ===");
         System.out.println("Updater conectado ao GitHub.");
-        System.out.println("Nova atualizacao aplicada.");
+        System.out.println("Atualizacao aplicada com sucesso.");
         System.out.println("Arquivos antigos foram substituidos.");
 
     }
 
 }
+)
+
+(Config.txt config/ =
+# Arquivo de configuração do sistema
+
+nomeApp=Cultoplay
+versao=20000000.0
+modo=teste
+autor=Davi
+
+)
+
+(Log.txt logs/ =
+=== LOG DO SISTEMA ===
+
+Sistema iniciado.
+Updater detectou nova versao.
+Arquivos atualizados.
+Tudo funcionando corretamente.
+
+)
+
+(DeepFile.txt assets/imagens/teste/ =
+Este arquivo foi criado em uma subpasta profunda.
+
+assets/
+  imagens/
+    teste/
+
+Se este arquivo existir, significa que o updater
+conseguiu criar múltiplas pastas automaticamente.
+
 )
