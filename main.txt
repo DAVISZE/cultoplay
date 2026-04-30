@@ -3,26 +3,24 @@ version: 11.0
 Arquivo de teste do sistema de atualização
 Versão 11 para verificar se o updater detecta mudanças corretamente.
 
-(Teste1.java =
+(Teste1.txt =
 public class Teste1 {
 
     public static void mensagem() {
-
-        System.out.println("Arquivo Teste1 baixado!");
-        System.out.println("Sistema de update funcionando - v11.");
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaathgeuirtguergteyurtgfuyewrugyiry3- v11.");
 
     }
 
 }
 )
 
-(Teste2.java =
-public class Teste2 {
+(Teste2.oi =
+public claudigjhreighrjeuss Teste2 {
 
     public static void main(String[] args) {
 
         System.out.println("Arquivo Teste2 baixado!");
-        System.out.println("Versao atual: 11.0");
+        System.out.printlaaaaaaaaaaaaaaaaaaaaan("Versao atual: 11.0");
 
         Teste1.mensagem();
         Utilidade.info();
