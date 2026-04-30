@@ -1,49 +1,56 @@
-version: 20000000.0
+version: 30000000.0
 
-Arquivo de teste gigante do sistema de atualização.
-Versão extremamente alta para garantir que o updater detecte.
+Sistema de atualização Cultoplay
+Teste avançado do updater com múltiplas pastas, arquivos e estruturas.
 
-(Teste1.txt ola/ =
-public class Teste1 {
-
-    public static void mensagem() {
-
-        System.out.println("=== TESTE1 ===");
-        System.out.println("Arquivo criado dentro da pasta ola/");
-        System.out.println("Updater funcionando perfeitamente.");
-        System.out.println("Versao do sistema: 20000000.0");
-
-    }
-
-}
-)
-
-(Teste2.oi =
-public class Teste2 {
+(Inicio.java =
+public class Inicio {
 
     public static void main(String[] args) {
 
-        System.out.println("=== TESTE2 ===");
-        System.out.println("Este arquivo foi colocado na pasta JAVA/");
-        System.out.println("Teste de execução principal.");
+        System.out.println("=================================");
+        System.out.println("   CULTOPLAY UPDATE SYSTEM");
+        System.out.println("=================================");
 
-        Teste1.mensagem();
-        Utilidade.info();
+        System.out.println("Versao carregada com sucesso!");
+        System.out.println("Sistema iniciado.");
+
+        Teste.mensagem();
+        Utilidades.info();
 
     }
 
 }
 )
 
-(Utilidade.java hello/ =
-public class Utilidade {
+(Teste.java scripts/ =
+public class Teste {
+
+    public static void mensagem() {
+
+        System.out.println("Executando modulo de teste...");
+        System.out.println("Todos os arquivos foram atualizados.");
+
+        for(int i = 1; i <= 5; i++) {
+            System.out.println("Processo " + i + " OK");
+        }
+
+        System.out.println("Teste finalizado.");
+
+    }
+
+}
+)
+
+(Utilidades.java core/system/ =
+public class Utilidades {
 
     public static void info() {
 
-        System.out.println("=== UTILIDADE ===");
+        System.out.println("=== SISTEMA ===");
         System.out.println("Updater conectado ao GitHub.");
-        System.out.println("Atualizacao aplicada com sucesso.");
-        System.out.println("Arquivos antigos foram substituidos.");
+        System.out.println("Arquivos sincronizados.");
+        System.out.println("Sistema pronto.");
 
     }
 
@@ -51,33 +58,63 @@ public class Utilidade {
 )
 
 (Config.txt config/ =
-# Arquivo de configuração do sistema
+# CONFIGURACAO DO SISTEMA
 
-nomeApp=Cultoplay
-versao=20000000.0
-modo=teste
+appName=Cultoplay
+version=30000000.0
+modo=producao
+update=true
 autor=Davi
 
 )
 
-(Log.txt logs/ =
-=== LOG DO SISTEMA ===
+(Readme.txt docs/ =
+CULTOPLAY SYSTEM
 
-Sistema iniciado.
-Updater detectou nova versao.
-Arquivos atualizados.
-Tudo funcionando corretamente.
+Este projeto utiliza um sistema de atualização automática.
+
+Estrutura de pastas criada pelo updater:
+
+JAVA/ -> arquivos sem pasta definida
+scripts/ -> scripts do sistema
+core/system/ -> núcleo do sistema
+config/ -> arquivos de configuração
+docs/ -> documentação
 
 )
 
-(DeepFile.txt assets/imagens/teste/ =
-Este arquivo foi criado em uma subpasta profunda.
+(Logo.txt assets/imagens/ =
+##########################
+#                        #
+#      CULTOPLAY         #
+#        SYSTEM          #
+#                        #
+##########################
 
-assets/
-  imagens/
-    teste/
+Logo de teste do sistema
+)
 
-Se este arquivo existir, significa que o updater
-conseguiu criar múltiplas pastas automaticamente.
+(Mapa.txt mundo/level1/level2/level3/ =
+Este arquivo está em uma pasta muito profunda.
+
+Se você está vendo este arquivo,
+significa que o updater conseguiu criar:
+
+mundo/
+  level1/
+    level2/
+      level3/
+
+Isso prova que o sistema suporta múltiplos níveis.
+)
+
+(LogInicial.txt logs/ =
+=== LOG DO SISTEMA ===
+
+Updater iniciado.
+Conectando ao GitHub...
+Download de arquivos iniciado...
+Arquivos atualizados com sucesso.
+Sistema operacional pronto.
 
 )
