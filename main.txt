@@ -1,24 +1,26 @@
-version: 123.0
+version: 124.0
 
-(Teste1.java =
+(Teste1.txt =
 public class Teste1 {
 
     public static void mensagem() {
 
-        System.out.println("Mensagem do Teste1 - versao 123");
+        System.out.println("Nova versao do Teste1!");
+        System.out.println("Arquivo foi atualizado com sucesso.");
+        System.out.println("Sistema de update funcionando.");
 
     }
 
 }
 )
 
-(Teste2.java =
+(Teste2.oi =
 public class Teste2 {
 
     public static void main(String[] args) {
 
-        System.out.println("Arquivo Teste2 executado!");
-        System.out.println("Versao atual: 123.0");
+        System.out.println("Arquivo Teste2 foi atualizado!");
+        System.out.println("Versao atual: 124.0");
 
         Teste1.mensagem();
         Utilidade.info();
@@ -34,7 +36,8 @@ public class Utilidade {
     public static void info() {
 
         System.out.println("Updater conectado ao GitHub.");
-        System.out.println("Atualizacao aplicada com sucesso.");
+        System.out.println("Nova atualizacao aplicada.");
+        System.out.println("Arquivos antigos foram substituidos.");
 
     }
 
